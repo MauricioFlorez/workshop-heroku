@@ -9,6 +9,7 @@ const handle = app.getRequestHandler();
 const server = express();
 
 const PORT = process.env.NODE_ENV || 3000;
+
 app.prepare()
   .then(() => {
     server.use('/graphql', graphqlHTTP({
@@ -18,7 +19,7 @@ app.prepare()
     server.get('/test', (req, res) => res.send('test'));
     server.get('*', (req, res) => handle(req, res));
     server.listen(PORT, () => {
-      console.log(`App is running PORT ${PORT}`);
+      console.log('App is running');
     });
   })
   .catch(() => {
