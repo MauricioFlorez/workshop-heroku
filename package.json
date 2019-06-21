@@ -27,6 +27,8 @@
     "graphql": "^14.3.1",
     "graphql-tool": "^1.0.0",
     "graphql-tools": "^4.0.5",
+    "heroku": "^7.25.0",
+    "heroku-cli": "^7.0.9",
     "inquirer": "^6.3.1",
     "next": "^8.1.0",
     "react": "^16.8.6",
