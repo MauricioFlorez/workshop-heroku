@@ -1,5 +1,17 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
-const Home = () => <h1>Welcome to my home</h1>;
+const handleClick = () => {
+  console.log('button clicked');
+};
+
+const Home = () => (
+  <div>
+    <Button variant="contained" onClick={handleClick}>
+      Home
+    </Button>
+  </div>
+);
+
 
 export default Home;
