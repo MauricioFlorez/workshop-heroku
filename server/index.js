@@ -8,7 +8,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 const server = express();
 
-const PORT = process.env.NODE_ENV || 3000;
+const PORT = process.env.NODE_ENV === 'production' ? process.env.PORT : 3000;
 
 app.prepare()
   .then(() => {
